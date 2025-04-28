@@ -10,7 +10,6 @@ Original file is located at
 import streamlit as st
 import numpy as np
 import os
-import gdown
 import pickle
 import pandas as pd
 from sklearn.model_selection import train_test_split
