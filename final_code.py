@@ -11,12 +11,6 @@ import streamlit as st
 import numpy as np
 import os
 import pickle
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error, r2_score
-import ipywidgets as widgets
-from IPython.display import display
 
 model_path = 'salary_model.pkl'
 
