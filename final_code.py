@@ -11,8 +11,13 @@ import streamlit as st
 import numpy as np
 import os
 import pickle
+import gdown
 
 model_path = 'salary_model.pkl'
+gdrive_file = '17CuHjleym5EiYpjqpF3HuZK8UKYUtSBO'
+
+if not os.path.exists(model_path):
+    gdown.download(f"https://drive.google.com/uc?id={gdrive_file}", model_path, quiet=false)
 
 #load
 model = pickle.load(open(model_path, 'rb'))
